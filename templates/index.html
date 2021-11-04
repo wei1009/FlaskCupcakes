@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.css">
+    <link rel="stylesheet" href="/static/app.css">
+    <title>Cupcakes</title>
+</head>
+
+<body>
+    <h1>All the cupcakes!</h1>
+
+    <div id="cupcakes-list" class="row">
+    </div>
+
+    <h2 class="cupcake-form">Add a new cupcake!</h2>
+
+    <form id="new-cupcake-form">
+        <div>
+            <label for="form-flavor">Flavor: </label>
+            <input name="flavor" id="form-flavor" class="form-control">
+        </div>
+
+        <div>
+            <label for="form-size">Size: </label>
+            <input name="size" id="form-size" class="form-control">
+        </div>
+
+        <div>
+            <label for="form-rating">Rating: </label>
+            <input type="number" name="rating" id="form-rating" class="form-control">
+        </div>
+
+        <div>
+            <label for="form-image">Image: </label>
+            <input name="image" id="form-image" class="form-control">
+        </div>
+
+        <button class="btn btn-info">Add</button>
+    </form>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="static/app.js"></script>
+</body>
+
+</html>
